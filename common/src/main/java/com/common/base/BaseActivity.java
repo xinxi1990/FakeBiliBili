@@ -1,19 +1,27 @@
 package com.common.base;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.CallSuper;
 import android.support.annotation.CheckResult;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MotionEvent;
 
+import com.common.base.jacoco.JacocoUtils;
 import com.trello.rxlifecycle2.LifecycleProvider;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 import com.trello.rxlifecycle2.RxLifecycle;
 import com.trello.rxlifecycle2.android.ActivityEvent;
 import com.trello.rxlifecycle2.android.RxLifecycleAndroid;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 import io.reactivex.Observable;
 import io.reactivex.subjects.BehaviorSubject;
@@ -24,11 +32,17 @@ import me.yokeyword.fragmentation.SupportActivityDelegate;
 import me.yokeyword.fragmentation.SupportHelper;
 import me.yokeyword.fragmentation.anim.FragmentAnimator;
 
+
 /**
  * Created by miserydx on 18/3/13.
  */
 
 public class BaseActivity extends AppCompatActivity implements ISupportActivity, LifecycleProvider<ActivityEvent> {
+
+
+    public static String DEFAULT_COVERAGE_FILE_PATH = Environment.getExternalStorageDirectory()+"/jc";
+    public static String TAG = "JacocoTest";
+
 
     private final BehaviorSubject<ActivityEvent> lifecycleSubject = BehaviorSubject.create();
 
@@ -72,8 +86,12 @@ public class BaseActivity extends AppCompatActivity implements ISupportActivity,
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Log.d(TAG,"存储路径:" + DEFAULT_COVERAGE_FILE_PATH);
+        //createFile(DEFAULT_COVERAGE_FILE_PATH,"coverage.ec");
         mDelegate.onCreate(savedInstanceState);
         lifecycleSubject.onNext(ActivityEvent.CREATE);
+
+
     }
 
     @Override
@@ -115,6 +133,9 @@ public class BaseActivity extends AppCompatActivity implements ISupportActivity,
         mDelegate.onDestroy();
         lifecycleSubject.onNext(ActivityEvent.DESTROY);
         super.onDestroy();
+        Log.d(TAG, "onDestroy");
+        //closeFile();
+        JacocoUtils.generateEcFile(true);
     }
 
     /**
@@ -333,4 +354,50 @@ public class BaseActivity extends AppCompatActivity implements ISupportActivity,
     public <T extends ISupportFragment> T findFragment(Class<T> fragmentClass) {
         return SupportHelper.findFragment(getSupportFragmentManager(), fragmentClass);
     }
-}
+
+
+
+    public static void createFile(String path,String fileName) {
+        Log.d(TAG,"createFile");
+        File file = null;
+        if (path == null) {
+            new Exception("path no null");
+        }
+        if (fileName == null) {
+            file = new File(path);
+        } else {
+            file = new File(path, fileName);
+        }
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    public void closeFile(){
+        Log.d(TAG,"closeFile");
+        OutputStream out = null;
+        try {
+            out = new FileOutputStream(DEFAULT_COVERAGE_FILE_PATH+"/coverage.ec", false);
+            Object agent = Class.forName("org.jacoco.agent.rt.RT")
+                    .getMethod("getAgent")
+                    .invoke(null);
+
+            out.write((byte[]) agent.getClass().getMethod("getExecutionData", boolean.class)
+                    .invoke(agent, false));
+        } catch (Exception e) {
+            Log.d(TAG, e.toString(), e);
+        } finally {
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        }
+    }
+

@@ -25,11 +25,16 @@ import com.facebook.common.memory.NoOpMemoryTrimmableRegistry;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.core.ImagePipelineConfig;
 
+import junit.framework.Assert;
+
 import me.yokeyword.fragmentation.BuildConfig;
 import me.yokeyword.fragmentation.Fragmentation;
 import me.yokeyword.fragmentation.helper.ExceptionHandler;
 
 public class App extends Application {
+
+    public static final String TAG = "GetCrash";
+
 
     private static App sInstance;
 
@@ -41,12 +46,13 @@ public class App extends Application {
 
     @Override
     public void onCreate() {
+
         super.onCreate();
         sInstance = this;
         registerActivityLifecycleCallbacks(new ActivityLifecycleManager());
         Fragmentation.builder()
                 // 设置 栈视图 模式为 悬浮球模式   SHAKE: 摇一摇唤出   NONE：隐藏
-                .stackViewMode(Fragmentation.NONE)
+                .stackViewMode(Fragmentation.SHAKE)
                 // ture时，遇到异常："Can not perform this action after onSaveInstanceState!"时，会抛出
                 // false时，不会抛出，会捕获，可以在handleException()里监听到
                 .debug(BuildConfig.DEBUG)
@@ -54,6 +60,8 @@ public class App extends Application {
                 .handleException(new ExceptionHandler() {
                     @Override
                     public void onException(Exception e) {
+                        Log.d(TAG,"崩溃日志:" + String.valueOf(e));
+                        System.out.printf("崩溃日志:" + String.valueOf(e));
                         // 建议在该回调处上传至我们的Crash监测服务器
                         // 以Bugtags为例子: 手动把捕获到的 Exception 传到 Bugtags 后台。
                         // Bugtags.sendException(e);
@@ -62,8 +70,13 @@ public class App extends Application {
                 .install();
         initFresco();
         if (sAppComponent == null) {
-            sAppComponent = DaggerAppComponent.create();
+//            sAppComponent = DaggerAppComponent.create();
+            sAppComponent = null;
         }
+
+        //Assert.assertEquals(2,1);
+
+
         //初始化工具类
         Utils.init(this);
     }
