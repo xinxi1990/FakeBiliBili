@@ -1,0 +1,1 @@
+ÔOcommon/build/generated/source/r/androidTest/debug/android/support/coreui/R.java 2javaX¢h

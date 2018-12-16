@@ -1,0 +1,1 @@
+ÁLcommon/build/generated/source/r/androidTest/debug/me/yokeyword/fragmentation :À

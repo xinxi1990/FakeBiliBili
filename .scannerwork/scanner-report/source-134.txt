@@ -1,0 +1,51 @@
+// Generated code from Butter Knife. Do not modify!
+package com.bilibili.ui.recommed.viewbinder;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.bilibili.R;
+import com.facebook.drawee.view.SimpleDraweeView;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class RecommendIndexItemBinder$RecommendIndexItemHolder_ViewBinding implements Unbinder {
+  private RecommendIndexItemBinder.RecommendIndexItemHolder target;
+
+  @UiThread
+  public RecommendIndexItemBinder$RecommendIndexItemHolder_ViewBinding(RecommendIndexItemBinder.RecommendIndexItemHolder target,
+      View source) {
+    this.target = target;
+
+    target.ivCover = Utils.findRequiredViewAsType(source, R.id.cover_iv, "field 'ivCover'", SimpleDraweeView.class);
+    target.tvPlay = Utils.findRequiredViewAsType(source, R.id.play_tv, "field 'tvPlay'", TextView.class);
+    target.tvReply = Utils.findRequiredViewAsType(source, R.id.reply_tv, "field 'tvReply'", TextView.class);
+    target.tvDuration = Utils.findRequiredViewAsType(source, R.id.duration_tv, "field 'tvDuration'", TextView.class);
+    target.tvTitle = Utils.findRequiredViewAsType(source, R.id.title_tv, "field 'tvTitle'", TextView.class);
+    target.tvTName = Utils.findRequiredViewAsType(source, R.id.t_name_tv, "field 'tvTName'", TextView.class);
+    target.flLoginCover = Utils.findRequiredViewAsType(source, R.id.login_cover_fl, "field 'flLoginCover'", FrameLayout.class);
+    target.ivLoginCover = Utils.findRequiredViewAsType(source, R.id.login_cover_iv, "field 'ivLoginCover'", ImageView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    RecommendIndexItemBinder.RecommendIndexItemHolder target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.ivCover = null;
+    target.tvPlay = null;
+    target.tvReply = null;
+    target.tvDuration = null;
+    target.tvTitle = null;
+    target.tvTName = null;
+    target.flLoginCover = null;
+    target.ivLoginCover = null;
+  }
+}

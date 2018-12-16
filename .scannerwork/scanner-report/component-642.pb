@@ -1,0 +1,1 @@
+‚Xcommon/build/generated/source/r/androidTest/debug/com/trello/rxlifecycle2/android/R.java 2javaXh

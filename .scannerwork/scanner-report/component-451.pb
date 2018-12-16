@@ -1,0 +1,1 @@
+ÃVijkplayer/build/generated/source/r/androidTest/debug/android/support/graphics/drawable :Â

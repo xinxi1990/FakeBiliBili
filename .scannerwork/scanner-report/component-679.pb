@@ -1,0 +1,1 @@
+§Pcommon/build/generated/source/r/debug/android/support/graphics/drawable/animated :¦

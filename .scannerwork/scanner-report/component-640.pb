@@ -1,0 +1,1 @@
+€[common/build/generated/source/r/androidTest/debug/com/trello/rxlifecycle2/components/R.java 2javaXðh

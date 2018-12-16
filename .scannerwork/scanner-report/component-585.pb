@@ -1,0 +1,1 @@
+ÉHcommon/build/generated/source/r/androidTest/debug/android/support/design :È

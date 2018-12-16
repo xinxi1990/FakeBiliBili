@@ -1,0 +1,1 @@
+‹Lcommon/build/generated/source/r/androidTest/debug/com/facebook/imagepipeline :Š

@@ -1,0 +1,1 @@
+rvbilibili/build/generated/source/apt/debug/com/bilibili/ui/test/adapter/MvpStructureAdapter$ViewHolder_ViewBinding.java 2javaX(h

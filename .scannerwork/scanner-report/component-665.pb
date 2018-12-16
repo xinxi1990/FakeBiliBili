@@ -1,0 +1,1 @@
+™Acommon/build/generated/source/r/debug/android/support/v7/cardview :˜

@@ -1,0 +1,1 @@
+¶Uijkplayer/build/generated/source/r/androidTest/debug/android/support/test/rule/R.java 2javaXh

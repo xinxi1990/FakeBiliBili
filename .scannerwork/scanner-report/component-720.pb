@@ -1,0 +1,1 @@
+ÐKcommon/build/generated/source/buildConfig/androidTest/debug/com/common/test :Î

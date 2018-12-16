@@ -1,0 +1,1 @@
+mebilibili/build/generated/source/apt/debug/com/bilibili/ui/test/activity/NewsActivity_ViewBinding.java 2javaX-h

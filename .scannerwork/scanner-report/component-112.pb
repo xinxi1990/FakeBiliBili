@@ -1,0 +1,1 @@
+p}bilibili/build/generated/source/apt/debug/com/bilibili/ui/test/adapter/NewsItemViewBinder$NewsItemViewHolder_ViewBinding.java 2javaX(h

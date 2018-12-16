@@ -1,0 +1,1 @@
+áJcommon/build/generated/source/r/androidTest/debug/android/support/fragment :à

@@ -1,0 +1,1 @@
+¢Ecommon/build/generated/source/r/debug/android/support/fragment/R.java 2javaX¢h

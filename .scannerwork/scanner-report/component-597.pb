@@ -1,0 +1,1 @@
+ÕHcommon/build/generated/source/r/androidTest/debug/android/support/coreui :Ô

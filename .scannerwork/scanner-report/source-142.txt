@@ -1,0 +1,37 @@
+// Generated code from Butter Knife. Do not modify!
+package com.bilibili.ui.region.viewbinder;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.bilibili.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class RegionPartitionItemViewBinder$PartitionViewHolder_ViewBinding implements Unbinder {
+  private RegionPartitionItemViewBinder.PartitionViewHolder target;
+
+  @UiThread
+  public RegionPartitionItemViewBinder$PartitionViewHolder_ViewBinding(RegionPartitionItemViewBinder.PartitionViewHolder target,
+      View source) {
+    this.target = target;
+
+    target.ivIcon = Utils.findRequiredViewAsType(source, R.id.iv_icon, "field 'ivIcon'", ImageView.class);
+    target.tvName = Utils.findRequiredViewAsType(source, R.id.tv_name, "field 'tvName'", TextView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    RegionPartitionItemViewBinder.PartitionViewHolder target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.ivIcon = null;
+    target.tvName = null;
+  }
+}

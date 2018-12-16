@@ -1,0 +1,1 @@
+vjbilibili/build/generated/source/apt/debug/com/bilibili/ui/test/fragment/NewsPageFragment2_ViewBinding.java 2javaX%h

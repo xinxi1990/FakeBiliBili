@@ -1,0 +1,1 @@
+	_bilibili/build/generated/source/r/androidTest/debug/android/support/test/espresso/idling/R.java 2javaXh

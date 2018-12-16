@@ -1,0 +1,1 @@
+Ò5common/src/main/java/com/common/app/ActivityBean.java 2javaX2h

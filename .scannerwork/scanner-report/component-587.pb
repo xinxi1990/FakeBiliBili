@@ -1,0 +1,1 @@
+ËLcommon/build/generated/source/r/androidTest/debug/android/support/transition :Ê

@@ -1,0 +1,1 @@
+ËFijkplayer/build/generated/source/r/androidTest/debug/android/arch/core :Ê

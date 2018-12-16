@@ -1,0 +1,1 @@
+Æ=common/build/generated/source/r/androidTest/debug/android/app :Ä

@@ -1,0 +1,1 @@
+Å_ijkplayer/build/generated/source/r/androidTest/debug/android/support/graphics/drawable/animated :Ä

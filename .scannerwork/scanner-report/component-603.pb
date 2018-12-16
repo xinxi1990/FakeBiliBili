@@ -1,0 +1,1 @@
+ÛOcommon/build/generated/source/r/androidTest/debug/android/support/test/espresso :Ú

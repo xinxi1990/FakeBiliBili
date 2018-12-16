@@ -1,0 +1,1 @@
+êJcommon/build/generated/source/r/androidTest/debug/android/arch/core/R.java 2javaXh

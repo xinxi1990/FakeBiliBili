@@ -1,0 +1,1 @@
+íRcommon/build/generated/source/r/androidTest/debug/android/arch/lifecycle/viewmodel :ì

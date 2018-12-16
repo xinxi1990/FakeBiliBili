@@ -1,0 +1,1 @@
+qFbilibili/build/generated/source/apt/debug/com/bilibili/ui/test/adapter :pr

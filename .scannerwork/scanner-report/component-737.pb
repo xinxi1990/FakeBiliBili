@@ -1,0 +1,1 @@
+áBcommon/src/main/java/com/common/widget/adapter/LoadViewBinder.java 2javaXh

@@ -1,0 +1,1 @@
+²Rijkplayer/build/generated/source/r/androidTest/debug/android/support/compat/R.java 2javaX†h

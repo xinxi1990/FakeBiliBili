@@ -1,0 +1,1 @@
+ÀTijkplayer/build/generated/source/r/androidTest/debug/android/support/fragment/R.java 2javaX¢h

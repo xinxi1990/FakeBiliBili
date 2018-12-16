@@ -1,0 +1,1 @@
+Î\common/build/generated/source/buildConfig/androidTest/debug/com/common/test/BuildConfig.java 2javaXh

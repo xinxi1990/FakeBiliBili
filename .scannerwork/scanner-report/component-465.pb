@@ -1,0 +1,1 @@
+ÑKijkplayer/build/generated/source/r/androidTest/debug/android/arch/lifecycle :Ð

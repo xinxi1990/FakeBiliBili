@@ -1,0 +1,1 @@
+Äfijkplayer/build/generated/source/r/androidTest/debug/android/support/graphics/drawable/animated/R.java 2javaX¢h

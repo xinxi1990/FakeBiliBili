@@ -1,0 +1,1 @@
+ÀScommon/build/generated/source/r/androidTest/debug/me/yokeyword/fragmentation/R.java 2javaX!h

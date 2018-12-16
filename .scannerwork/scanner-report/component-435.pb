@@ -1,0 +1,1 @@
+³Kijkplayer/build/generated/source/r/androidTest/debug/android/support/compat :²

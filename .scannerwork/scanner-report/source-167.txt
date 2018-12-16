@@ -1,0 +1,54 @@
+// Generated code from Butter Knife. Do not modify!
+package com.bilibili.ui.main;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.bilibili.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class MainFragment_ViewBinding implements Unbinder {
+  private MainFragment target;
+
+  private View view2131689789;
+
+  @UiThread
+  public MainFragment_ViewBinding(final MainFragment target, View source) {
+    this.target = target;
+
+    View view;
+    target.mToolbar = Utils.findRequiredViewAsType(source, R.id.main_toolbar, "field 'mToolbar'", Toolbar.class);
+    target.tabLayout = Utils.findRequiredViewAsType(source, R.id.tab_layout, "field 'tabLayout'", TabLayout.class);
+    target.viewPager = Utils.findRequiredViewAsType(source, R.id.viewpager, "field 'viewPager'", ViewPager.class);
+    view = Utils.findRequiredView(source, R.id.ll_top_menu_nav, "method 'onClick'");
+    view2131689789 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    MainFragment target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.mToolbar = null;
+    target.tabLayout = null;
+    target.viewPager = null;
+
+    view2131689789.setOnClickListener(null);
+    view2131689789 = null;
+  }
+}

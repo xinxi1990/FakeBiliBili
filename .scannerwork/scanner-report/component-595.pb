@@ -1,0 +1,1 @@
+ÓHcommon/build/generated/source/r/androidTest/debug/android/support/compat :Ò

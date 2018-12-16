@@ -1,0 +1,1 @@
+®7common/build/generated/source/r/debug/android/arch/core :¬

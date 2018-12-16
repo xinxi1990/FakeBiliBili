@@ -1,0 +1,47 @@
+// Generated code from Butter Knife. Do not modify!
+package com.bilibili.ui.test.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.bilibili.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ScrollGradientActivity_ViewBinding implements Unbinder {
+  private ScrollGradientActivity target;
+
+  @UiThread
+  public ScrollGradientActivity_ViewBinding(ScrollGradientActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public ScrollGradientActivity_ViewBinding(ScrollGradientActivity target, View source) {
+    this.target = target;
+
+    target.collapsingToolbarLayout = Utils.findRequiredViewAsType(source, R.id.collapsing_toolbar_layout, "field 'collapsingToolbarLayout'", CollapsingToolbarLayout.class);
+    target.mToolbar = Utils.findRequiredViewAsType(source, R.id.toolbar, "field 'mToolbar'", Toolbar.class);
+    target.swipeRefreshLayout = Utils.findRequiredViewAsType(source, R.id.activity_main_srl, "field 'swipeRefreshLayout'", SwipeRefreshLayout.class);
+    target.recyclerView = Utils.findRequiredViewAsType(source, R.id.activity_main_rv, "field 'recyclerView'", RecyclerView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    ScrollGradientActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.collapsingToolbarLayout = null;
+    target.mToolbar = null;
+    target.swipeRefreshLayout = null;
+    target.recyclerView = null;
+  }
+}

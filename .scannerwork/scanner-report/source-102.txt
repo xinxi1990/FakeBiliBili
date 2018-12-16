@@ -1,0 +1,151 @@
+// Generated code from Butter Knife. Do not modify!
+package com.bilibili.ui.test.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.Button;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.bilibili.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class NavigationTestActivity_ViewBinding implements Unbinder {
+  private NavigationTestActivity target;
+
+  private View view2131689672;
+
+  private View view2131689673;
+
+  private View view2131689674;
+
+  private View view2131689675;
+
+  private View view2131689676;
+
+  private View view2131689677;
+
+  private View view2131689678;
+
+  private View view2131689680;
+
+  @UiThread
+  public NavigationTestActivity_ViewBinding(NavigationTestActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public NavigationTestActivity_ViewBinding(final NavigationTestActivity target, View source) {
+    this.target = target;
+
+    View view;
+    view = Utils.findRequiredView(source, R.id.news_btn, "field 'btnNews' and method 'jumpToPage'");
+    target.btnNews = Utils.castView(view, R.id.news_btn, "field 'btnNews'", Button.class);
+    view2131689672 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.jumpToPage(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.toolbar_behavior_mvp_btn, "field 'btnToolbarBehavior' and method 'jumpToPage'");
+    target.btnToolbarBehavior = Utils.castView(view, R.id.toolbar_behavior_mvp_btn, "field 'btnToolbarBehavior'", Button.class);
+    view2131689673 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.jumpToPage(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.status_picture_mvp_btn, "field 'btnStatusWithPicture' and method 'jumpToPage'");
+    target.btnStatusWithPicture = Utils.castView(view, R.id.status_picture_mvp_btn, "field 'btnStatusWithPicture'", Button.class);
+    view2131689674 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.jumpToPage(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.scroll_gradient_mvp_btn, "field 'btnScrollGradient' and method 'jumpToPage'");
+    target.btnScrollGradient = Utils.castView(view, R.id.scroll_gradient_mvp_btn, "field 'btnScrollGradient'", Button.class);
+    view2131689675 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.jumpToPage(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.test_api_btn, "field 'btnTestApi' and method 'jumpToPage'");
+    target.btnTestApi = Utils.castView(view, R.id.test_api_btn, "field 'btnTestApi'", Button.class);
+    view2131689676 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.jumpToPage(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.test_no_base_btn, "field 'btnTestNoBase' and method 'jumpToPage'");
+    target.btnTestNoBase = Utils.castView(view, R.id.test_no_base_btn, "field 'btnTestNoBase'", Button.class);
+    view2131689677 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.jumpToPage(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.test_no_base_mvp_btn, "field 'btnTestNoBaseMvp' and method 'jumpToPage'");
+    target.btnTestNoBaseMvp = Utils.castView(view, R.id.test_no_base_mvp_btn, "field 'btnTestNoBaseMvp'", Button.class);
+    view2131689678 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.jumpToPage(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.main_btn, "field 'btnMain' and method 'jumpToPage'");
+    target.btnMain = Utils.castView(view, R.id.main_btn, "field 'btnMain'", Button.class);
+    view2131689680 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.jumpToPage(p0);
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    NavigationTestActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.btnNews = null;
+    target.btnToolbarBehavior = null;
+    target.btnStatusWithPicture = null;
+    target.btnScrollGradient = null;
+    target.btnTestApi = null;
+    target.btnTestNoBase = null;
+    target.btnTestNoBaseMvp = null;
+    target.btnMain = null;
+
+    view2131689672.setOnClickListener(null);
+    view2131689672 = null;
+    view2131689673.setOnClickListener(null);
+    view2131689673 = null;
+    view2131689674.setOnClickListener(null);
+    view2131689674 = null;
+    view2131689675.setOnClickListener(null);
+    view2131689675 = null;
+    view2131689676.setOnClickListener(null);
+    view2131689676 = null;
+    view2131689677.setOnClickListener(null);
+    view2131689677 = null;
+    view2131689678.setOnClickListener(null);
+    view2131689678 = null;
+    view2131689680.setOnClickListener(null);
+    view2131689680 = null;
+  }
+}

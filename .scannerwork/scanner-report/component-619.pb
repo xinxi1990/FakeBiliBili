@@ -1,0 +1,1 @@
+ëCcommon/build/generated/source/r/androidTest/debug/android/arch/core :ê

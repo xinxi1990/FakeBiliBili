@@ -1,0 +1,33 @@
+// Generated code from Butter Knife. Do not modify!
+package com.bilibili.ui.test.fragment;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.TextView;
+import butterknife.Unbinder;
+import butterknife.internal.Utils;
+import com.bilibili.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class PlaceHolderFragment_ViewBinding implements Unbinder {
+  private PlaceHolderFragment target;
+
+  @UiThread
+  public PlaceHolderFragment_ViewBinding(PlaceHolderFragment target, View source) {
+    this.target = target;
+
+    target.tvPlaceHolder = Utils.findRequiredViewAsType(source, R.id.tv_place_holder, "field 'tvPlaceHolder'", TextView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    PlaceHolderFragment target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.tvPlaceHolder = null;
+  }
+}

@@ -1,0 +1,1 @@
+ÁOcommon/build/generated/source/r/debug/com/trello/rxlifecycle2/components/R.java 2javaXŠh

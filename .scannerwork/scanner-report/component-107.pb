@@ -1,0 +1,1 @@
+kpbilibili/build/generated/source/apt/debug/com/bilibili/ui/test/activity/ToolbarBehaviorActivity_ViewBinding.java 2javaX0h

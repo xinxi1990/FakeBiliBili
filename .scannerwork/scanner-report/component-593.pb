@@ -1,0 +1,1 @@
+ÑMcommon/build/generated/source/r/androidTest/debug/android/support/v7/cardview :Ð

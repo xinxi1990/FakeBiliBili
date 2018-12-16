@@ -1,0 +1,1 @@
+ñHcommon/build/generated/source/r/androidTest/debug/android/arch/lifecycle :ð

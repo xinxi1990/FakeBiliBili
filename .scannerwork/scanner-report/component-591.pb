@@ -1,0 +1,1 @@
+ÏNcommon/build/generated/source/r/androidTest/debug/android/support/v7/appcompat :Î

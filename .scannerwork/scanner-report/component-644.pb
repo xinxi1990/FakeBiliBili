@@ -1,0 +1,1 @@
+„Dcommon/build/generated/source/r/androidTest/debug/butterknife/R.java 2javaXh
